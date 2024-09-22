@@ -15,6 +15,23 @@ body {
   }
 }
 
+body {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  height: 100vh;           /* Full height to ensure it covers the viewport */
+  margin: 0;
+}
+
+/* .twitter {
+  display: block;
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #1da1f2;
+  }
+} */
+
 @media (min-width: 1000px) {
   body {
     background-image: @hintImg;
@@ -46,7 +63,7 @@ body {
 .title {
   position: absolute;
   width: 100%;
-  top: 59%;
+  top: 54%;
   /* Adjust as needed */
   text-align: center;
   color: red;
@@ -70,8 +87,8 @@ body {
 .twitter {
   position: fixed;
   display: block;
-  right: 64px;
-  bottom: 14px;
+  /* right: 64px; */
+  bottom: 20px;
 
   svg {
     width: 32px;
