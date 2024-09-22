@@ -1,0 +1,48 @@
+@hintImg: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAAAsCAMAAAANb+e2AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABIUExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEmGJtMAAAAXdFJOUwDvnxBg34BAIL+gcOAwkFDAz7Cvj3/QdltdogAAA+dJREFUaN7tmMmWpSAMQFVmaac3lP//pw0CIUGs8tm16IVZ1KnDg5ALmbBpbrnllltuueWEMC6ltAqNaK3pFDfAwlz4SWf5Xn1NWRRWDldXM2LB3iYnyqxBxBvG/qyrIgvcHB5mu4kwBLLwYwa/QpIRtLB9cjzcsnI1d6Nd3M5QBveLjf+/kEqhL0KgpTvpvXFHEE6MRsOyXC0ShEI2b7K4TeO/nd9i5GqyMzLlJMTSb/LwO7VHFK03ThUQj7Bw3vhZhmgr1xggmpFelL8inf9NfJOAGzsJAeeGltb8YV3HAiIRawlGhgtS+2uMvzN3Gq/sTALW+duSBFtdgtiG61fhptnC2clc9+PKMsTe78FYjhlf2W0GMAk2vAaRJ5TJxbtI8SMFhk1DiLD9NXZ5pkF0PB+gQGsGzoeLEGMlKKMZnf9jDiHGZKUb7gstzlHGDKFbsPy5rjNYvQ+l6xC2pkl4Td6d2RGEI3ykYUXt8WesMkQjk19yrMJrt78CIXYxmU5JhPiURxAWQXilioQ1xxBMhNhmJJS36Le/APGmfon1d2GVOYLoU+7ymi2e6B1fY4iUP4rdPNMqrP43COZyRTsceNMQi4WqQ/hcOQGEd40BeU/XEAgfC4ZENejwHN3EKEQnsYh6ses2cbVznasMUzqyEZcK4tBPONVNM04Qm4tSCB/bU0+GQmCJWP+fE4bYybdtx0MdtRwyLWsxhAoN4PAW2Z83zSrXFBe9S1NAbGWl2h6oPnIs+iqEOwJdLRLpzLE/FYplgyBy2YguXED4lukgETbD1jqBYzsIq7AsVYgxdtSqRy0QLRJz9u9nFaK1DYGYUmjr4GclhDdAHLf9yJKPs5MPrWet5XjFU3ij1sOp+Jq9COIYUXO6s5zYaAAsB70Bihp5sU6osmOAzieLLQM7b4ggZMwBIszaQZjvIXzULBcharplAWF22Uni1jBqZmEsueLHEDq52wWISvMk0rthk3xVGcKXha6AiKGddvwZ4mnMVPQqVyHkDqLwsDwf1QmJ2uukWcWCJppzEIY+V14pm1xzp6naciBfFTsIJoiX5XQMi3+GkKRdyK3u5xAWLFNcgzdhLAalAlds9NIBzc6qpQV1P0J4xSIN2RbO6lMI/YK3i8vzwXZe5nODOj2NM6YpINj2LH80JyHCQ1x0ltuupcXuDEQrgrToe4dJ+z/K3aGjIBAKmoH8yuzRa/tMdlICf3cZLn+yWedo12MNgaV3r37wp93zVDAKgavyqRSrZcJo5dWPZ3++Rpg+iFCF+b47GKPnUAj4uIbe+4a8oE/ViWGy0nL9W19FB3Z/Gb7llltuueU/kb9iW4DUF8pi1QAAAABJRU5ErkJggg==');
+
+html, body {
+  background-color: #e1e1e1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .slides, & > .dg {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: @hintImg;
+    background-repeat: no-repeat;
+    
+    & > .dg {
+      display: block;
+    }
+  }
+}
+
+// dribbble - twitter
+.dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+  img {
+    display: block;
+    height: 28px;
+  }
+}
+.twitter {
+  position: fixed;
+  display: block;
+  right: 64px;
+  bottom: 14px;
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #1da1f2;
+  }
+}
