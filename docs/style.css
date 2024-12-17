@@ -93,6 +93,55 @@ body {
   svg {
     width: 32px;
     height: 32px;
-    fill: #1da1f2;
+    fill: #822;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+.loading-bar {
+  width: 90%;
+  max-width: 420px;
+  height: 20px;
+  background: #d3b7b7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  animation: fadeIn 2s 2s forwards;
+  opacity: 0;
+  /* delay of 8s to start after icon_logo */
+}
+
+.loading-bar-inner {
+  width: 69%;
+  height: 100%;
+  background: linear-gradient(-45deg, #822 25%, transparent 25%, transparent 50%, #822 50%, #822 75%, transparent 75%, transparent);
+  background-size: 56.57px 56.57px;
+  /* sqrt(2) * 40px */
+  animation: swirl 2s linear infinite;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes swirl {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: 56.57px 56.57px;
   }
 }
